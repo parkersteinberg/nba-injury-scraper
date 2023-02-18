@@ -10,7 +10,9 @@ import time
 from datetime import datetime
 
 
-def create_injury_logs(start_date, save_csv=False):
+def create_injury_logs(start_date='', save_csv=False):
+  if start_date == '':
+      raise Exception('A date must be passed to run create_injury_logs')
   '''
   Reads new records from injury table and creates records in injury_logs table
   inputs: 
@@ -220,3 +222,6 @@ def create_injury_logs(start_date, save_csv=False):
   # save to csv
   if save_csv:
     injury_logs.to_csv('injury_logs.csv', index=False)
+
+if __name__ == '__main__':
+    create_injury_logs()
