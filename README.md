@@ -5,7 +5,7 @@
 ## Repo to create the dataset used for [Injury Insights](https://github.com/parkersteinberg/nba-app)
 
 ### Data scraped from: [Pro Sports Transactions](https://www.prosportstransactions.com/basketball/Search/Search.php) (a great resource!)
-### PostgreSQL db hosted with [CockroachDB](https://www.cockroachlabs.com/)
+### PostgreSQL database hosted with [CockroachDB](https://www.cockroachlabs.com/)
 
 <br>
 
